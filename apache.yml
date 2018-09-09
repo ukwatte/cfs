@@ -30,7 +30,6 @@ Parameters:
     - c3.4xlarge
     - c3.8xlarge
     ConstraintDescription: must be a valid EC2 instance type.
-
   KeyName:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instance.
     Type: AWS::EC2::KeyPair::KeyName
@@ -177,7 +176,7 @@ Resources:
               content:
                 Fn::Join:
                 - "\n"
-                - - "<h1>Hello Srilanka</h1>"
+                - - "<h1>Hello Apache</h1>"
               mode: '000644'
               owner: root
               group: root
